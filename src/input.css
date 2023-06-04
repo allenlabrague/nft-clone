@@ -3,3 +3,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  #gradient-shadow::before {
+    content: "";
+    background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%);
+    position: absolute;
+    height: 120%;
+    width: 80%;
+    bottom: 0;
+    z-index: -10;
+    filter: blur(100px);
+  }
+}
