@@ -11,90 +11,122 @@
 
 <body class="p-0 m-0 bg-[#2B2B2B] text-white font-Poopins">
     <header>
-        <nav class="flex justify-between items-center py-5 mb-10 mx-5">
-            <div class="flex items-center gap-2">
-                <img class="w-9" src="/images/svg/marketplace.svg" alt="marketplace-icon">
-                <h2 class="text-xl font-bold">NFT Marketplace</h2>
+        <nav class="flex justify-between items-center py-5 mb-10 lg:p-10 relative">
+            <div class="flex justify-between items-center w-full fixed p-5 top-0 z-50 bg-[#2B2B2B] lg:hidden">
+                <div class="flex items-center gap-2 z-50">
+                    <img class="w-9" src="/images/svg/marketplace.svg" alt="marketplace-icon">
+                    <h2 class="text-xl font-bold">NFT Marketplace</h2>
+                </div>
+                <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
             </div>
-            <img src="/images/svg/sidebar.svg" alt="sidebar-icon">
+            <!-- SideBar Menu -->
+            <div id="menuToggle" class="mobile-nav">
+                <ul class="flex flex-col gap-5 justify-start mt-28 items-center h-screen">
+                    <li class="hover:bg-[#A259FF] p-3 w-full text-center">Marketplace</li>
+                    <li class="hover:bg-[#A259FF] p-3 w-full text-center">Rankings</li>
+                    <li class="hover:bg-[#A259FF] p-3 w-full text-center">Connect a wallet</li>
+                    <li class="hover:bg-[#A259FF] p-3 w-full text-center">Get Started</li>
+                </ul>
+            </div>
+            <!--  -->
+            <div class="hidden lg:flex lg:justify-between lg:w-full">
+                <div class="flex items-center gap-2 z-50">
+                    <img class="w-9" src="/images/svg/marketplace.svg" alt="marketplace-icon">
+                    <h2 class="text-xl font-bold">NFT Marketplace</h2>
+                </div>
+                <ul class="flex items-center gap-4">
+                    <li class="transition-all p-3 px-9 rounded-full hover:bg-[#A259FF]">Marketplace</li>
+                    <li class="transition-all p-3 px-9 rounded-full hover:bg-[#A259FF]">Rankings</li>
+                    <li class="transition-all p-3 px-9 rounded-full hover:bg-[#A259FF]">
+                        Connect a wallet</li>
+                    <button class="bg-[#A259FF] p-3 px-9 rounded-full">Get
+                        Started</button>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <section>
-            <div class="mx-5 md:flex md:gap-5 md:my-16 md:justify-center md:items-center">
-                <div class="md:w-6/12 md:flex md:flex-col md:justify-center md:mx-auto">
-                    <h1 class="text-3xl w-9/12 font-bold mb-4">Discover digital art & Collect NFTs</h1>
-                    <p class="text-gray-300 text-justify">NFT marketplace UI created with Anima for Figma.
-                        Collect,
-                        buy
-                        and
-                        sell art from
-                        more than 20k NFT
-                        artists.</p>
-                    <div>
-                        <div class="flex items-center">
-                            <button
-                                class="bg-none hover:bg-[#A259FF] transition-all border-[#A259FF] border-2 p-3 px-9 w-11/12 mx-auto rounded-full my-10 hidden md:block">Get
-                                Started</button>
-                        </div>
-                    </div>
-                    <div class="hidden md:block">
-                        <div class="flex justify-around gap-16 mb-5">
-                            <div>
-                                <h2 class="font-bold text-center">240k+</h2>
-                                <p class="text-gray-300 md:text-xs">Total Sale</p>
-                            </div>
-                            <div>
-                                <h2 class="font-bold text-center">100k+</h2>
-                                <p class="text-gray-300 md:text-xs">Auctions</p>
-                            </div>
-                            <div>
-                                <h2 class="font-bold text-center">240k+</h2>
-                                <p class="text-gray-300 md:text-xs">Artists</p>
+            <div class="mx-5 md:gap-5 md:my-16 md:flex md:justify-center md:items-center md:mx-20 lg:mx-32 lg:gap-0">
+                <div
+                    class="flex flex-col justify-center items-center mx-auto md:flex md:flex-row md:justify-center md:items-center lg:mx-32">
+                    <div class="lg:w-2/4">
+                        <h1 class="text-3xl w-9/12 font-bold mb-4 lg:text-5xl lg:w-10/12">Discover digital art & Collect
+                            NFTs</h1>
+                        <p class="text-gray-300 text-justify lg:w-2/3">NFT marketplace UI created with Anima for Figma.
+                            Collect,
+                            buy
+                            and
+                            sell art from
+                            more than 20k NFT
+                            artists.</p>
+                        <div>
+                            <div class="md:flex md:justify-start">
+                                <button
+                                    class="bg-[#A259FF] transition-all p-3 px-9 w-11/12 mx-auto rounded-full my-10 hidden hover:scale-95 md:block md:w-fit md:mx-0 md:px-16">Get
+                                    Started</button>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img class="w-11/12 mx-auto mt-5" src="/images/pictures/hero-img.png">
-                        <div class="w-11/12 mx-auto bg-[#3B3B3B] p-5 rounded-b-xl">
-                            <h2 class="text-lg mb-2 font-semibold">Space Walking</h2>
-                            <div class="flex gap-3 items-center">
-                                <img src="/images/mini-profile-avatar/mini-avatar1.png">
-                                <p class="text-gray-300">Animakid</p>
+                        <div class="hidden md:block">
+                            <div class="flex justify-around gap-16 mb-5 lg:gap-32 lg:justify-start">
+                                <div>
+                                    <h2 class="font-bold text-center">240k+</h2>
+                                    <p class="text-gray-300 md:text-xs">Total Sale</p>
+                                </div>
+                                <div>
+                                    <h2 class="font-bold text-center">100k+</h2>
+                                    <p class="text-gray-300 md:text-xs">Auctions</p>
+                                </div>
+                                <div>
+                                    <h2 class="font-bold text-center">240k+</h2>
+                                    <p class="text-gray-300 md:text-xs">Artists</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <div class="flex items-center relative md:hidden">
-                        <button
-                            class="bg-none hover:bg-[#A259FF] transition-all border-[#A259FF] border-2 p-3 px-9 w-11/12 mx-auto rounded-full my-10">Get
-                            Started</button>
-                    </div>
-                </div>
-                <div class="flex justify-around gap-16 mb-5 md:hidden">
-                    <div>
-                        <h2 class="font-bold text-center">240k+</h2>
-                        <p class="text-gray-300 md:text-xs">Total Sale</p>
-                    </div>
-                    <div>
-                        <h2 class="font-bold text-center">100k+</h2>
-                        <p class="text-gray-300 md:text-xs">Auctions</p>
-                    </div>
-                    <div>
-                        <h2 class="font-bold text-center">240k+</h2>
-                        <p class="text-gray-300 md:text-xs">Artists</p>
+                    <div class="lg:w-2/4">
+                        <div>
+                            <img class="w-11/12 mx-auto mt-5" src="/images/pictures/hero-img.png">
+                            <div class="w-11/12 mx-auto bg-[#3B3B3B] p-5 rounded-b-xl">
+                                <h2 class="text-lg mb-2 font-semibold">Space Walking</h2>
+                                <div class="flex gap-3 items-center">
+                                    <img src="/images/mini-profile-avatar/mini-avatar1.png">
+                                    <p class="text-gray-300">Animakid</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center relative md:hidden">
+                                    <button
+                                        class="bg-[#A259FF] transition-all p-3 px-9 w-11/12 mx-auto rounded-full my-10 hover:scale-95">Get
+                                        Started</button>
+                                </div>
+                            </div>
+                            <div class="flex justify-around gap-16 mb-5 md:hidden">
+                                <div>
+                                    <h2 class="font-bold text-center">240k+</h2>
+                                    <p class="text-gray-300 md:text-xs">Total Sale</p>
+                                </div>
+                                <div>
+                                    <h2 class="font-bold text-center">100k+</h2>
+                                    <p class="text-gray-300 md:text-xs">Auctions</p>
+                                </div>
+                                <div>
+                                    <h2 class="font-bold text-center">240k+</h2>
+                                    <p class="text-gray-300 md:text-xs">Artists</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="mx-5">
-                <h2 class="text-3xl font-semibold mb-4 mt-16">Trending Collection</h2>
-                <p class="text-gray-300 mb-16">Checkout our weekly updated trending collection.</p>
+            <div class="mx-5 md:mx-20 lg:mx-32">
+                <h2 class="text-3xl font-semibold mb-4 mt-16 lg:mx-32">Trending Collection</h2>
+                <p class="text-gray-300 mb-16 lg:mx-32">Checkout our weekly updated trending collection.</p>
                 <div class="md:grid md:place-content-center">
                     <div
-                        class="grid gap-5 place-content-center md:grid md:grid-cols-2 md:place-content-center md:gap-10">
+                        class="grid gap-5 place-content-center md:grid md:grid-cols-2 md:place-content-center md:gap-10 lg:grid-cols-3">
                         <div>
                             <div>
                                 <div class="group relative cursor-pointer mb-3 overflow-hidden">
@@ -171,7 +203,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="hidden">
+                        <div class="hidden md:hidden lg:block">
                             <div>
                                 <div class="group relative cursor-pointer overflow-hidden">
                                     <div>
@@ -212,8 +244,8 @@
                     </div>
                 </div>
             </div>
-            <div class="mx-5">
-                <div class="flex justify-between items-center">
+            <div class="mx-5 md:mx-20 lg:mx-32">
+                <div class="flex justify-between items-center  lg:mx-32">
                     <div>
                         <h2 class="text-3xl font-semibold mb-4 mt-16">Top creators</h2>
                         <p class="text-gray-300 mb-16">Checkout Top Rated Creators on the NFT Marketplace</p>
@@ -221,12 +253,12 @@
                     <div class="hidden md:block">
                         <div class="flex items-center relative">
                             <button
-                                class="bg-none hover:bg-[#A259FF] transition-all border-[#A259FF] border-2 p-3 px-9 pl-12 mx-auto rounded-full relative my-10">View
+                                class="bg-none hover:bg-[#A259FF] transition-all border-[#A259FF] border-2 p-3 px-9 mx-auto rounded-full relative my-10">View
                                 Rankings</button>
                         </div>
                     </div>
                 </div>
-                <div class="grid md:grid md:grid-cols-2 gap-5">
+                <div class="grid md:grid md:grid-cols-2 gap-5 lg:hidden">
                     <div
                         class="hover:shadow-[0_0_28px_-10px_rgba(255,255,255,0.40);] hover:bg-[rgb(162,89,255)] hover:scale-110  transition-all bg-[#3B3B3B] rounded-3xl w-10/12 mx-auto">
                         <div class="flex justify-normal items-center p-5 gap-5">
@@ -330,16 +362,67 @@
                         </div>
                     </div>
                 </div>
+                <!-- For laptop view style -->
+                <div class="hidden lg:grid lg:grid-cols-4 gap-4 lg:mx-32">
+                    <div
+                        class="flex flex-col justify-center items-center relative px-0 py-5 hover:shadow-[0_0_28px_-10px_rgba(255,255,255,0.40);] hover:bg-[rgb(162,89,255)] hover:scale-105  transition-all bg-[#3B3B3B] rounded-3xl">
+                        <img class="w-24" src="/images/profile-avatar/avatar-icon5.png" alt="Avatar-semi-mini">
+                        <h2 class="mt-3 font-semibold">Keepitreal</h2>
+                        <p class="text-sm text-gray-400">Total Sales: <span class="text-sm text-white ml-2">32.52
+                                ETH</span>
+                        </p>
+                        <div
+                            class="absolute left-2 top-2 text-center pt-1 text-gray-400 bg-[#2B2B2B] w-8 h-8 rounded-full">
+                            1
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col justify-center items-center relative px-0 py-5 hover:shadow-[0_0_28px_-10px_rgba(255,255,255,0.40);] hover:bg-[rgb(162,89,255)] hover:scale-105  transition-all bg-[#3B3B3B] rounded-3xl">
+                        <img class="w-24" src="/images/profile-avatar/avatar-icon5.png" alt="Avatar-semi-mini">
+                        <h2 class="mt-3 font-semibold">Keepitreal</h2>
+                        <p class="text-sm text-gray-400">Total Sales: <span class="text-sm text-white ml-2">32.52
+                                ETH</span>
+                        </p>
+                        <div
+                            class="absolute left-2 top-2 text-center pt-1 text-gray-400 bg-[#2B2B2B] w-8 h-8 rounded-full">
+                            1
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col justify-center items-center relative px-0 py-5 hover:shadow-[0_0_28px_-10px_rgba(255,255,255,0.40);] hover:bg-[rgb(162,89,255)] hover:scale-105  transition-all bg-[#3B3B3B] rounded-3xl">
+                        <img class="w-24" src="/images/profile-avatar/avatar-icon5.png" alt="Avatar-semi-mini">
+                        <h2 class="mt-3 font-semibold">Keepitreal</h2>
+                        <p class="text-sm text-gray-400">Total Sales: <span class="text-sm text-white ml-2">32.52
+                                ETH</span>
+                        </p>
+                        <div
+                            class="absolute left-2 top-2 text-center pt-1 text-gray-400 bg-[#2B2B2B] w-8 h-8 rounded-full">
+                            1
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col justify-center items-center relative px-0 py-5 hover:shadow-[0_0_28px_-10px_rgba(255,255,255,0.40);] hover:bg-[rgb(162,89,255)] hover:scale-105  transition-all bg-[#3B3B3B] rounded-3xl">
+                        <img class="w-24" src="/images/profile-avatar/avatar-icon5.png" alt="Avatar-semi-mini">
+                        <h2 class="mt-3 font-semibold">Keepitreal</h2>
+                        <p class="text-sm text-gray-400">Total Sales: <span class="text-sm text-white ml-2">32.52
+                                ETH</span>
+                        </p>
+                        <div
+                            class="absolute left-2 top-2 text-center pt-1 text-gray-400 bg-[#2B2B2B] w-8 h-8 rounded-full">
+                            1
+                        </div>
+                    </div>
+                </div>
                 <div class="flex items-center relative md:hidden">
                     <button
                         class="bg-none hover:bg-[#A259FF] transition-all border-[#A259FF] border-2 p-3 px-9 w-10/12 mx-auto rounded-full my-10">View
                         Rankings</button>
                 </div>
             </div>
-            <div class="mx-5">
+            <div class="mx-5 md:mx-20 lg:mx-32">
                 <div class="mb-11">
-                    <h2 class="text-3xl w-9/12 font-semibold mb-10 mt-16">Browse Categories</h2>
-                    <div class="grid grid-cols-2 gap-y-7 md:grid md:grid-cols-4">
+                    <h2 class="text-3xl w-9/12 font-semibold mb-10 mt-16 lg:mt-40 lg:mx-32">Browse Categories</h2>
+                    <div class="grid grid-cols-2 gap-y-7 md:grid md:grid-cols-4 lg:mx-32">
                         <div class="flex flex-col justify-center items-center hover:scale-105 transition-all">
                             <img class="w-10/12" src="/images/category-icon/Art.png" alt="category-icon">
                             <div class="bg-[#3B3B3B] w-10/12 p-5 rounded-b-3xl">
@@ -391,8 +474,8 @@
                     </div>
                 </div>
             </div>
-            <div class="mx-5">
-                <div class="flex justify-between items-center">
+            <div class="mx-5 md:mx-20 lg:mx-32">
+                <div class="flex justify-between items-center lg:mx-32">
                     <div>
                         <h2 class="text-3xl font-semibold mb-4 mt-16">Discover More NFTs</h2>
                         <p class="text-gray-300 mb-16">Explore new trending NFTs</p>
@@ -405,8 +488,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-7 md:grid md:grid-cols-2 md:mb-24">
-                    <div class="hover:scale-105 transition-all">
+                <div class="flex flex-col gap-7 md:grid md:grid-cols-2 md:mb-24 lg:grid-cols-3 lg:mx-32 lg:gap-0">
+                    <div class="hover:scale-95 transition-all">
                         <img class=" w-11/12 mx-auto" src="/images/pictures/buy-sell-art2.png">
                         <div class="w-11/12 mx-auto bg-[#3B3B3B] p-5 rounded-b-xl">
                             <h2 class="text-xl mb-2 font-semibold">Life On Edena</h2>
@@ -426,7 +509,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hover:scale-105 transition-all">
+                    <div class="hover:scale-95 transition-all">
                         <img class="w-11/12 mx-auto" src="/images/pictures/buy-sell-art.png">
                         <div class="w-11/12 mx-auto bg-[#3B3B3B] p-5 rounded-b-xl">
                             <h2 class="text-xl mb-2 font-semibold">Life On Edena</h2>
@@ -446,7 +529,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hover:scale-105 transition-all md:hidden">
+                    <div class="hover:scale-95 transition-all md:hidden lg:block">
                         <img class="w-11/12 mx-auto" src="/images/pictures/buy-sell-art1.png">
                         <div class="w-11/12 mx-auto bg-[#3B3B3B] p-5 rounded-b-xl">
                             <h2 class="text-xl mb-2 font-semibold">AstroFiction</h2>
@@ -475,7 +558,7 @@
             </div>
             <div id="gradient-shadow" class="relative bg-center bg-cover p-8 pt-24 mt-10 mb-28"
                 style="background-image: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%), url(/images/pictures/event-img.png);">
-                <div class="md:flex md:justify-between md:items-center md:mt-36">
+                <div class="md:flex md:justify-between md:items-center md:mt-36 lg:mx-32">
                     <div>
                         <div
                             class="flex  items-center gap-2 bg-[#3B3B3B] w-max p-2 px-3 mb-8 font-semibold rounded-full">
@@ -501,10 +584,10 @@
                     </div>
                 </div>
             </div>
-            <div class="mx-5">
-                <h2 class="text-3xl font-semibold mb-4">How It Works</h2>
-                <p class="text-gray-300 mb-16">Find out how to get started</p>
-                <div class="grid gap-7 md:grid md:grid-cols-3">
+            <div class="mx-5 md:mx-20 lg:mx-32">
+                <h2 class="text-3xl font-semibold mb-4 lg:mx-32">How It Works</h2>
+                <p class="text-gray-300 mb-16 lg:mx-32">Find out how to get started</p>
+                <div class="grid gap-7 md:grid md:grid-cols-3 lg:mx-32">
                     <div
                         class="flex items-center rounded-2xl p-5 bg-[#3B3B3B] hover:scale-95 transition-all md:flex md:flex-col">
                         <div class="w-11/12 md:w-fit">
@@ -544,9 +627,9 @@
                     </div>
                 </div>
             </div>
-            <div class="mx-5">
+            <div class="mx-5 md:mx-20 lg:mx-32">
                 <div
-                    class="md:my-10 md:flex md:justify-between md:items-center md:bg-[#3B3B3B] md:p-10 md:py-8 md:rounded-3xl">
+                    class="md:my-10 md:flex md:justify-between md:items-center md:bg-[#3B3B3B] md:p-10 md:py-8 md:rounded-3xl lg:mx-32">
                     <div class="flex justify-center items-center">
                         <img class="w-full mt-32 md:mt-0" src="/images/pictures/Photo.png" alt="astronaut-image">
                     </div>
@@ -568,42 +651,45 @@
     <footer>
         <section>
             <div class="bg-[#3B3B3B] p-10">
-                <div class="flex items-center gap-2 mb-5">
-                    <img class="w-9" src="/images/svg/marketplace.svg" alt="marketplace-icon">
-                    <h2 class="text-xl font-bold">NFT Marketplace</h2>
-                </div>
-                <p class="text-gray-300 w-80 mb-5">NFT marketplace UI created with Anima for Figma.</p>
-                <p class="text-gray-300">Join our community</p>
-                <div class="flex gap-2 my-3 mb-8">
-                    <img src="/images/svg/media-icon/discord.svg" alt="discord-icon">
-                    <img src="/images/svg/media-icon/instagram.svg" alt="instagram-icon">
-                    <img src="/images/svg/media-icon/twitter.svg" alt="twitter-icon">
-                    <img src="/images/svg/media-icon/youtube.svg" alt="youtube-icon">
-                </div>
-                <div>
-                    <h3 class="font-semibold text-2xl mb-3">Explore</h3>
-                    <div class="flex flex-col gap-4 text-gray-300">
-                        <p>Marketplace</p>
-                        <p>Rankings</p>
-                        <p>Connect a wallet</p>
+                <div class="md:mx-20 lg:mx-52">
+                    <div class="flex items-center gap-2 mb-5">
+                        <img class="w-9" src="/images/svg/marketplace.svg" alt="marketplace-icon">
+                        <h2 class="text-xl font-bold">NFT Marketplace</h2>
                     </div>
-                </div>
-                <div>
-                    <h2 class="text-3xl font-semibold mb-4 mt-16">Join Our Weekly Digest</h2>
-                    <p class="text-gray-300 mb-12">Get exclusive promotions & updates straight to your inbox.</p>
-                    <form class="flex flex-col items-center gap-5 md:flex md:items-start" method="get">
-                        <input class="p-3 px-9 pl-12 w-11/12 rounded-full relative text-black md:w-80" type="email"
-                            placeholder="Enter Your Email Address" required>
-                        <button class="bg-[#A259FF] p-3 px-9 w-11/12
+                    <p class="text-gray-300 w-80 mb-5">NFT marketplace UI created with Anima for Figma.</p>
+                    <p class="text-gray-300">Join our community</p>
+                    <div class="flex gap-2 my-3 mb-8">
+                        <img src="/images/svg/media-icon/discord.svg" alt="discord-icon">
+                        <img src="/images/svg/media-icon/instagram.svg" alt="instagram-icon">
+                        <img src="/images/svg/media-icon/twitter.svg" alt="twitter-icon">
+                        <img src="/images/svg/media-icon/youtube.svg" alt="youtube-icon">
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-2xl mb-3">Explore</h3>
+                        <div class="flex flex-col gap-4 text-gray-300">
+                            <p>Marketplace</p>
+                            <p>Rankings</p>
+                            <p>Connect a wallet</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-semibold mb-4 mt-16">Join Our Weekly Digest</h2>
+                        <p class="text-gray-300 mb-12">Get exclusive promotions & updates straight to your inbox.</p>
+                        <form class="flex flex-col items-center gap-5 md:flex md:items-start" method="get">
+                            <input class="p-3 px-9 pl-12 w-11/12 rounded-full relative text-black md:w-80" type="email"
+                                placeholder="Enter Your Email Address" required>
+                            <button class="bg-[#A259FF] p-3 px-9 w-11/12
                         rounded-full mb-10 md:w-80">Get
-                            Started</button>
-                    </form>
+                                Started</button>
+                        </form>
+                    </div>
+                    <hr class="bg-gray-600">
+                    <p class="text-gray-300 my-8 md:text-center">Ⓒ NFT Market. Use this template freely.</p>
                 </div>
-                <hr class="bg-gray-600">
-                <p class="text-gray-300 my-8">Ⓒ NFT Market. Use this template freely.</p>
             </div>
         </section>
     </footer>
+    <script src="/dist/index.js"></script>
 </body>
 
 
