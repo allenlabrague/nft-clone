@@ -70,5 +70,4 @@ collectionsNft.forEach((collection) => {
   `;
 });
 
-let test = (document.querySelector(".js-collection").innerHTML =
-  collectionsNftHTML);
+document.querySelector(".js-collection").innerHTML = collectionsNftHTML;
