@@ -87,7 +87,7 @@ browserCategories.forEach((browser) => {
   browserCategoriesHTML += `
     <div class="flex flex-col justify-center items-center hover:scale-95 transition-all">
         <img class="w-10/12" src="${browser.image}">
-        <div class="bg-[#3B3B3B] w-10/12 p-5 rounded-b-xl">
+        <div class="bg-[#3B3B3B] w-10/12 p-5 rounded-b-3xl">
             <h3 class="font-medium sm:text-sm md:text-lg lg:text-lg">${browser.categories}</h3>
         </div>
     </div>
