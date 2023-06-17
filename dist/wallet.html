@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/output.css">
-    <title>Sign Up Account</title>
+    <title>Connect a wallet</title>
 </head>
 
 <body class="p-0 m-0 bg-[#2B2B2B] text-white font-Poopins">
@@ -14,7 +14,7 @@
             <div class="flex justify-between items-center w-full fixed p-5 top-0 z-50 bg-[#2B2B2B] lg:hidden">
                 <div class="flex items-center gap-2 z-50">
                     <img class="w-9" src="/images/svg/marketplace.svg" alt="marketplace-icon">
-                    <h2 class="text-xl font-bold cursor-pointer"><a href="/dist/html/index.html">NFT Marketplace</a>
+                    <h2 class="text-xl font-bold cursor-pointer"><a href="/dist/index.html">NFT Marketplace</a>
                     </h2>
                 </div>
                 <button class="hamburger">
@@ -26,9 +26,10 @@
                 <ul class="flex flex-col gap-5 justify-start mt-28 items-center h-screen">
                     <li class="hover:bg-[#A259FF] p-3 w-full text-center">Marketplace</li>
                     <li class="hover:bg-[#A259FF] p-3 w-full text-center">Rankings</li>
-                    <li class="hover:bg-[#A259FF] p-3 w-full text-center"><a href="/dist/html/wallet.html">Connect a
+                    <li class="hover:bg-[#A259FF] p-3 w-full text-center"><a href="/dist/wallet.html">Connect a
                             wallet</a></li>
-                    <li class="hover:bg-[#A259FF] p-3 w-full text-center">Sign In</li>
+                    <li class="hover:bg-[#A259FF] p-3 w-full text-center"><a href="/dist/sign-up.html">Sign Up</a>
+                    </li>
                     <li>
                         <p class="text-gray-300">Join our community</p>
                     </li>
@@ -47,14 +48,14 @@
             <div class="hidden lg:flex lg:justify-between lg:w-full">
                 <div class="flex items-center gap-2 z-50">
                     <img class="w-9" src="/images/svg/marketplace.svg" alt="marketplace-icon">
-                    <h2 class="text-xl font-bold cursor-pointer"><a href="/dist/html/index.html">NFT Marketplace</a>
+                    <h2 class="text-xl font-bold cursor-pointer"><a href="/dist/index.html">NFT Marketplace</a>
                     </h2>
                 </div>
                 <ul class="flex items-center gap-4">
                     <li class="transition-all p-3 px-9 rounded-full hover:bg-[#A259FF]">Marketplace</li>
                     <li class="transition-all p-3 px-9 rounded-full hover:bg-[#A259FF]">Rankings</li>
                     <li class="transition-all p-3 px-9 rounded-full hover:bg-[#A259FF]"><a
-                            href="/dist/html/wallet.html">Connect a wallet</a></li>
+                            href="/dist/wallet.html">Connect a wallet</a></li>
                     <button class="bg-[#A259FF] p-3 px-9 rounded-full">Sign In</button>
                 </ul>
             </div>
@@ -68,20 +69,30 @@
                     <img class="hidden md:block lg:block lg:w-full" src="/images/pictures/sign2-img.png"
                         alt="space-img">
                 </div>
-                <div class="mx-10 md:mx-20 lg:mx-32 lg:basis-1/4">
-                    <h1 class="mt-8 text-4xl font-semibold">Create account</h1>
-                    <p class="text-gray-300 my-7">Welcome! enter your details and start creating, collecting and
-                        selling
-                        NFTs.</p>
-                    <form class="flex flex-col gap-4">
-                        <input class="p-3 px-10 rounded-3xl text-black" type="text" placeholder="Username" required>
-                        <input class="p-3 px-10 rounded-3xl text-black" type="email" placeholder="Email Address"
-                            required>
-                        <input class="p-3 px-10 rounded-3xl text-black" type="password" placeholder="password" required>
-                        <input class="p-3 px-10 rounded-3xl text-black" type="password" placeholder="Confirm password"
-                            required>
-                        <button class="bg-[#A259FF] w-full mt-4 mb-20 p-3 px-10 rounded-3xl">Create Account</button>
-                    </form>
+                <div class="mx-10 mb-10 md:mx-20 lg:mx-32 lg:basis-1/4">
+                    <h1 class="mt-8 text-4xl font-semibold">Connect a wallet</h1>
+                    <p class="text-gray-300 my-7">Choose a wallet you want to connect. There are several wallet
+                        providers.</p>
+                    <div class="flex flex-col justify-center items-center gap-5">
+                        <div
+                            class="w-full relative bg-[#3B3B3B] border-[#A259FF] border-2 rounded-3xl hover:bg-[#A259FF] hover:scale-95 transition-all">
+                            <img class="absolute left-6 top-2" src="/images/wallet-icon/Metamask.png"
+                                alt="Metamask-icon">
+                            <button class="w-full p-4 pl-20  font-semibold text-lg text-left">Metamask</button>
+                        </div>
+                        <div
+                            class="w-full relative bg-[#3B3B3B] border-[#A259FF] border-2 rounded-3xl hover:bg-[#A259FF] hover:scale-95 transition-all">
+                            <img class="absolute left-6 top-2" src="/images/wallet-icon/WalletConnect.png"
+                                alt="WalletConnect-icon">
+                            <button class="w-full p-4 pl-20  font-semibold text-lg text-left">Wallet Connect</button>
+                        </div>
+                        <div
+                            class="w-full relative bg-[#3B3B3B] border-[#A259FF] border-2 rounded-3xl hover:bg-[#A259FF] hover:scale-95 transition-all">
+                            <img class="absolute left-6 top-2" src="/images/wallet-icon/Coinbase.png"
+                                alt="Coinbase-icon">
+                            <button class="w-full p-4 pl-20  font-semibold text-lg text-left">Coinbase</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -94,7 +105,7 @@
                         <div>
                             <div class="flex items-center gap-2 mb-5">
                                 <img class="w-9" src="/images/svg/marketplace.svg" alt="marketplace-icon">
-                                <h2 class="text-xl font-bold"><a href="/dist/html/index.html">NFT Marketplace</a></h2>
+                                <h2 class="text-xl font-bold"><a href="/dist/index.html">NFT Marketplace</a></h2>
                             </div>
                             <p class="text-gray-300 w-80 mb-5">NFT marketplace UI created with Anima for Figma.</p>
                             <p class="text-gray-300">Join our community</p>
@@ -110,7 +121,7 @@
                             <div class="flex flex-col gap-4 text-gray-300">
                                 <p>Marketplace</p>
                                 <p>Rankings</p>
-                                <p><a href="/dist/html/wallet.html">Connect a wallet</a></p>
+                                <p><a href="/dist/wallet.html">Connect a wallet</a></p>
                             </div>
                         </div>
                         <div>
