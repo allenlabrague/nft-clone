@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../output.css">
-    <title>Sign Up Account</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>Connect a wallet</title>
 </head>
 
 <body class="p-0 m-0 bg-[#2B2B2B] text-white font-Poopins">
@@ -28,7 +28,9 @@
                     <li class="hover:bg-[#A259FF] p-3 w-full text-center">Rankings</li>
                     <li class="hover:bg-[#A259FF] p-3 w-full text-center"><a href="../dist/html/wallet.html">Connect a
                             wallet</a></li>
-                    <li class="hover:bg-[#A259FF] p-3 w-full text-center">Sign In</li>
+                    <li class="hover:bg-[#A259FF] p-3 w-full text-center"><a href="../dist/html/sign-up.html">Sign
+                            Up</a>
+                    </li>
                     <li>
                         <p class="text-gray-300">Join our community</p>
                     </li>
@@ -55,7 +57,8 @@
                     <li class="transition-all p-3 px-9 rounded-full hover:bg-[#A259FF]">Rankings</li>
                     <li class="transition-all p-3 px-9 rounded-full hover:bg-[#A259FF]"><a
                             href="../dist/html/wallet.html">Connect a wallet</a></li>
-                    <button class="bg-[#A259FF] p-3 px-9 rounded-full">Sign In</button>
+                    <button class="bg-[#A259FF] p-3 px-9 rounded-full"><a href="../dist/html/sign-up.html">Sign
+                            Up</a></button>
                 </ul>
             </div>
         </nav>
@@ -68,20 +71,30 @@
                     <img class="hidden md:block lg:block lg:w-full" src="../images/pictures/sign2-img.png"
                         alt="space-img">
                 </div>
-                <div class="mx-10 md:mx-20 lg:mx-32 lg:basis-1/4">
-                    <h1 class="mt-8 text-4xl font-semibold">Create account</h1>
-                    <p class="text-gray-300 my-7">Welcome! enter your details and start creating, collecting and
-                        selling
-                        NFTs.</p>
-                    <form class="flex flex-col gap-4">
-                        <input class="p-3 px-10 rounded-3xl text-black" type="text" placeholder="Username" required>
-                        <input class="p-3 px-10 rounded-3xl text-black" type="email" placeholder="Email Address"
-                            required>
-                        <input class="p-3 px-10 rounded-3xl text-black" type="password" placeholder="password" required>
-                        <input class="p-3 px-10 rounded-3xl text-black" type="password" placeholder="Confirm password"
-                            required>
-                        <button class="bg-[#A259FF] w-full mt-4 mb-20 p-3 px-10 rounded-3xl">Create Account</button>
-                    </form>
+                <div class="mx-10 mb-10 md:mx-20 lg:mx-32 lg:basis-1/4">
+                    <h1 class="mt-8 text-4xl font-semibold">Connect a wallet</h1>
+                    <p class="text-gray-300 my-7">Choose a wallet you want to connect. There are several wallet
+                        providers.</p>
+                    <div class="flex flex-col justify-center items-center gap-5">
+                        <div
+                            class="w-full relative bg-[#3B3B3B] border-[#A259FF] border-2 rounded-3xl hover:bg-[#A259FF] hover:scale-95 transition-all">
+                            <img class="absolute left-6 top-2" src="../images/wallet-icon/Metamask.png"
+                                alt="Metamask-icon">
+                            <button class="w-full p-4 pl-20  font-semibold text-lg text-left">Metamask</button>
+                        </div>
+                        <div
+                            class="w-full relative bg-[#3B3B3B] border-[#A259FF] border-2 rounded-3xl hover:bg-[#A259FF] hover:scale-95 transition-all">
+                            <img class="absolute left-6 top-2" src="../images/wallet-icon/WalletConnect.png"
+                                alt="WalletConnect-icon">
+                            <button class="w-full p-4 pl-20  font-semibold text-lg text-left">Wallet Connect</button>
+                        </div>
+                        <div
+                            class="w-full relative bg-[#3B3B3B] border-[#A259FF] border-2 rounded-3xl hover:bg-[#A259FF] hover:scale-95 transition-all">
+                            <img class="absolute left-6 top-2" src="../images/wallet-icon/Coinbase.png"
+                                alt="Coinbase-icon">
+                            <button class="w-full p-4 pl-20  font-semibold text-lg text-left">Coinbase</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -132,7 +145,7 @@
             </div>
         </section>
     </footer>
-    <script src="../dist/html/js/index.js"></script>
+    <script src="../dist/js/index.js"></script>
 </body>
 
 </html>

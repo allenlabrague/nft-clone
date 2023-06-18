@@ -1197,6 +1197,14 @@ video {
     margin-top: 9rem;
   }
 
+  .md\:mb-16{
+    margin-bottom: 4rem;
+  }
+
+  .md\:mt-32{
+    margin-top: 8rem;
+  }
+
   .md\:block{
     display: block;
   }
