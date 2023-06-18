@@ -1,8 +1,8 @@
-import collectionsNft from "../data/collection.js";
-import creatorsProfile from "../data/creators.js";
-import browserCategories from "../data/categories.js";
-import nfts from "../data/sell-nft.js";
-import howItWorks from "../data/how-it-works.js";
+import collectionsNft from "../data/collection.mjs";
+import creatorsProfile from "../data/creators.mjs";
+import browserCategories from "../data/categories.mjs";
+import nfts from "../data/sell-nft.mjs";
+import howItWorks from "../data/how-it-works.mjs";
 
 let collectionsNftHTML = "";
 let creatorsProfileHTML = "";
